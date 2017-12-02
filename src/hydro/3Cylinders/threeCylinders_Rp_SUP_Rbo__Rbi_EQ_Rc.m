@@ -781,10 +781,10 @@ end
 
 end
 
-function [Ti1,Ti2] = Ti_func(m,a,b,alpha)
-[p,q]=size(alpha);
-Ti1=zeros(p,q);
-Ti2=zeros(p,q);
+function [Ti1,Ti2] = Ti_func(m, a, b, alpha)
+[p, q] = size(alpha);
+Ti1 = zeros(p, q);
+Ti2 = zeros(p, q);
 
 cst = besseli(m,alpha.*a).*besselk(m,alpha.*b) - besseli(m,alpha.*b).*besselk(m,alpha.*a);
 
@@ -808,4 +808,3 @@ if abs(alpha(1))==0
 end
 
 end
-

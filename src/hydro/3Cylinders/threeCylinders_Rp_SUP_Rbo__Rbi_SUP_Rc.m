@@ -950,7 +950,7 @@ Fe=conj(Fe(1:end-1,:));
 Fe_Haskind=conj(Fe_Haskind(1:end-1,:));
 Fe_FK=conj(Fe_FK(1:end-1,:));
 
-save([DIR,filesep,'DATA',filesep,'hydroParameters.mat'],'Omega','Fe','A','A_inf','B','Fe_Haskind','Fe_FK');
+% save([DIR,filesep,'DATA',filesep,'hydroParameters.mat'],'Omega','Fe','A','A_inf','B','Fe_Haskind','Fe_FK');
 % % *** ATTENTION -> ici on reprend une dépendance en temps positive exp(-iwt) --> exp(iwt)
 % for i=1:6
 % 	for j=1:6
