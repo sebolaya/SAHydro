@@ -106,11 +106,11 @@ else
 	DIR = options.DIR;
 end
 
-if ~isdir([DIR,filesep,'DATA'])
-	mkdir([DIR,filesep,'DATA']);
-	addpath(genpath(DIR));
-	addpath(genpath([DIR,filesep,'DATA']));
-end
+% if ~isdir([DIR,filesep,'DATA'])
+% 	mkdir([DIR,filesep,'DATA']);
+% 	addpath(genpath(DIR));
+% 	addpath(genpath([DIR,filesep,'DATA']));
+% end
 
 g = 9.81;
 rho = 1025;

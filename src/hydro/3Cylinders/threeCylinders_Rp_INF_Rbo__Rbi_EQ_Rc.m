@@ -107,11 +107,11 @@ else
 	DIR = options.DIR;
 end
 
-if ~isdir([DIR,filesep,'DATA'])
-	mkdir([DIR,filesep,'DATA']);
-	addpath(genpath(DIR));
-	addpath(genpath([DIR,filesep,'DATA']));
-end
+% if ~isdir([DIR,filesep,'DATA'])
+% 	mkdir([DIR,filesep,'DATA']);
+% 	addpath(genpath(DIR));
+% 	addpath(genpath([DIR,filesep,'DATA']));
+% end
 
 
 
@@ -649,7 +649,7 @@ Fe = conj(Fe(1:end-1,:));
 Fe_Haskind = conj(Fe_Haskind(1:end-1,:));
 Fe_FK = conj(Fe_FK(1:end-1,:));
 
-save([DIR,filesep,'DATA',filesep,'hydroParameters.mat'],'Omega','Fe','A','A_inf','B','Fe_Haskind','Fe_FK');
+% save([DIR,filesep,'DATA',filesep,'hydroParameters.mat'],'Omega','Fe','A','A_inf','B','Fe_Haskind','Fe_FK');
 end% END OF FUNCTION
 
 %% Additional functions
